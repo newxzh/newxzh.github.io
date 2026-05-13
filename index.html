@@ -1,30 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 <meta charset="utf-8">
-<title>Zhanhang Xiong</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+Zhanhang Xiong | Zhejiang University | Industrial AI
+</title>
+
+<meta name="description"
+content="Zhanhang Xiong (熊展航) is a PhD student at Zhejiang University researching large language models for software engineering, PLC code generation, industrial AI, and multilingual code interoperability.">
+
+<meta name="keywords"
+content="Zhanhang Xiong, 熊展航, LLM, PLC, Industrial AI, Code Generation, Software Engineering, Zhejiang University">
+
+<meta name="author" content="Zhanhang Xiong">
+
+<link rel="canonical" href="https://newxzh.github.io/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Zhanhang Xiong">
+<meta property="og:description"
+content="PhD student at Zhejiang University working on LLMs for Software Engineering and Industrial AI.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://newxzh.github.io/">
+<meta property="og:image"
+content="https://newxzh.github.io/profile.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zhanhang Xiong">
+<meta name="twitter:description"
+content="Research on LLMs for Software Engineering and Industrial AI.">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Zhanhang Xiong",
+  "alternateName": "熊展航",
+  "url": "https://newxzh.github.io/",
+  "image": "https://newxzh.github.io/profile.jpg",
+  "jobTitle": "PhD Student",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Zhejiang University"
+  },
+  "sameAs": [
+    "https://github.com/newxzh",
+    "https://scholar.google.com/citations?user=1I0WTiYAAAAJ"
+  ]
+}
+</script>
 
 <style>
-/* 全局字体改为更现代的衬线+无衬线组合，兼容性好 */
+
+/* ===== Global ===== */
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 40px auto;
-    max-width: 900px;
-    line-height: 1.7;
+    max-width: 950px;
+    line-height: 1.8;
     color: #333;
+    padding: 0 20px;
+    background-color: #ffffff;
 }
 
-/* 标题样式 */
+/* ===== Headings ===== */
+
 h1 {
-    font-size: 30px;
+    font-size: 34px;
+    margin-bottom: 5px;
 }
 
 h2 {
-    border-bottom: 2px solid #eee;
-    padding-bottom: 5px;
+    margin-top: 40px;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 6px;
+    color: #222;
 }
 
-/* 链接 */
+/* ===== Links ===== */
+
 a {
     color: #2a5db0;
     text-decoration: none;
@@ -34,171 +94,400 @@ a:hover {
     text-decoration: underline;
 }
 
-/* 新闻和出版物缩进 */
-.news, .pub {
-    margin-left: 5px;
-}
+/* ===== Profile ===== */
 
-/* 头像圆角 */
 .profile {
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-/* 论文图片圆角 */
-.paper-img {
-    margin-top: 10px;
-    border-radius: 6px;
-}
+/* ===== Education ===== */
 
-/* 教育经历 ul 样式 */
 .education-list {
-    padding-left: 5px;
+    padding-left: 20px;
 }
 
 .education-list li {
     margin-bottom: 10px;
-    font-size: 16px;        /* 调整字体大小 */
     color: #444;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* 更现代字体 */
+}
+
+/* ===== News ===== */
+
+.news li {
+    margin-bottom: 10px;
+}
+
+/* ===== Publications ===== */
+
+.pub-table {
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.paper-img {
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.paper-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111;
+}
+
+.paper-authors {
+    margin-top: 8px;
+}
+
+.paper-venue {
+    margin-top: 5px;
+    color: #555;
+}
+
+.paper-links {
+    margin-top: 10px;
+}
+
+/* ===== Footer ===== */
+
+footer {
+    margin-top: 60px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* ===== Responsive ===== */
+
+@media screen and (max-width: 768px) {
+
+    table {
+        width: 100%;
+    }
+
+    .intro-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .paper-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .paper-img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
 }
 
 </style>
+
 </head>
 
 <body>
 
-<!-- 个人信息 + 头像 -->
-<table>
+<!-- ===== Intro ===== -->
+
+<table class="intro-table">
 <tr>
 
-<td width="220">
+<td width="230">
 <img src="profile.jpg" width="200" class="profile">
 </td>
 
 <td>
+
 <h1>Zhanhang Xiong (熊展航)</h1>
 
 <p>
 PhD Student, Zhejiang University <br>
-Research: Large Language Models for Software Engineering, Industrial AI, Code Generation
+Research Interests: Large Language Models for Software Engineering, Industrial AI, PLC Code Generation
 </p>
 
 <p>
-<a href="https://scholar.google.com/citations?user=1I0WTiYAAAAJ&hl=zh-CN">Google Scholar</a> /
-<a href="https://github.com/newxzh">GitHub</a> /
-<a href="mailto:zhanhangxiong@zju.edu.cn">Email</a>
+<a href="https://scholar.google.com/citations?user=1I0WTiYAAAAJ&hl=zh-CN" target="_blank">
+Google Scholar
+</a>
+
+/
+
+<a href="https://github.com/newxzh" target="_blank">
+GitHub
+</a>
+
+/
+
+<a href="mailto:zhanhangxiong@zju.edu.cn">
+Email
+</a>
+
 </p>
 
 </td>
+
 </tr>
 </table>
+
+<!-- ===== About ===== -->
 
 <h2>About</h2>
 
 <p>
-I am a PhD student at Zhejiang University working on large language models for software engineering. 
-My research focuses on code generation, multilingual code interoperability, and industrial control systems.
+Zhanhang Xiong (熊展航) is a PhD student at Zhejiang University working on large language models for software engineering and industrial AI.
 </p>
 
 <p>
-My recent work explores:
+His research focuses on:
 </p>
 
 <ul>
 <li>LLM-based code generation</li>
-<li>Cross-language program interoperability</li>
 <li>Industrial control software engineering</li>
+<li>PLC code generation and verification</li>
+<li>Cross-language program interoperability</li>
+<li>LLM agents for industrial systems</li>
 </ul>
 
-<h2>📖 Education</h2>
+<!-- ===== Education ===== -->
+
+<h2>Education</h2>
 
 <ul class="education-list">
-<li>2024 – Present &nbsp; Zhejiang University &nbsp; Ph.D. in Control Science and Engineering</li>
-<li>2021 – 2024 &nbsp; East China University of Science and Technology &nbsp; M.S. in Control Engineering</li>
-<li>2017 – 2021 &nbsp; East China Jiaotong University &nbsp; B.S. in Automation</li>
+
+<li>
+2024 – Present &nbsp;&nbsp;
+Zhejiang University &nbsp;&nbsp;
+Ph.D. in Control Science and Engineering
+</li>
+
+<li>
+2021 – 2024 &nbsp;&nbsp;
+East China University of Science and Technology &nbsp;&nbsp;
+M.S. in Control Engineering
+</li>
+
+<li>
+2017 – 2021 &nbsp;&nbsp;
+East China Jiaotong University &nbsp;&nbsp;
+B.S. in Automation
+</li>
+
 </ul>
+
+<!-- ===== News ===== -->
 
 <h2>News</h2>
 
 <ul class="news">
-<li><b>2026.01</b>🎉🎉Paper accepted by ICLR 2026.</li>
+
+<li>
+<b>2026.01</b> —
+🎉 Paper accepted by ICLR 2026.
+</li>
+
 </ul>
 
-<h2>📝 Publications</h2>
+<!-- ===== Publications ===== -->
 
-<div class="pub">
+<h2>Selected Publications</h2>
 
-<!-- CrossPL 论文 -->
-<table>
+<!-- Paper 1 -->
+
+<table class="pub-table paper-table">
+
 <tr>
-<td width="420">
-<img src="crosspl.png" width="400" class="paper-img">
-</td>
-<td>
-<p>
-<b>CrossPL: Systematic Evaluation of Large Language Models for Cross Programming Language Interoperating Code Generation</b><br>
-<b>Zhanhang Xiong</b>, Dongxia Wang, Yuekang Li, Xinyuan An, Wenhai Wang<br>
-ICLR 2026 (CCF-A)<br>
-<a href="https://openreview.net/pdf?id=p4ERSIzHdL" target="_blank">[PDF]</a>
-<a href="https://github.com/newxzh/crosspl" target="_blank">[Code]</a>
-</p>
-</td>
-</tr>
-</table>
 
-<!-- STBack 论文 -->
-<table>
-<tr>
-<td width="420">
-<img src="stback.png" width="400" class="paper-img">
-</td>
-<td>
-<p>
-<b>Watch Out Your Industrial Copilots: Stealthy Backdoor Attack Against LLM-Based PLC Code Generation</b><br>
-Xinyuan An, Xiaoxia Liu, Dongxia Wang, <b>Zhanhang Xiong</b>, Wenhai Wang<br>
-ACL Findings 2026 <br>
-<a href="https://newxzh.github.io/" target="_blank">[PDF]</a>
-<a href="https://newxzh.github.io/" target="_blank">[Code]</a>
-</p>
+<td width="430">
+
+<img src="crosspl.png"
+width="400"
+class="paper-img">
 
 </td>
-</tr>
-</table>
-    
-<!-- 第二篇论文 -->
-<table>
-<tr>
-<td>
-<p>
-<b>A wind speed forecasting method based on EMD-MGM with switching QR loss function and novel subsequence superposition</b><br>
-<b>Zhanhang Xiong</b>, Jianjiang Yao, Yongmin Huang, Zhaoxu Yu, Yalei Liu<br>
-Applied Energy, JCR: Q1, IF: 11
-</p>
-</td>
-</tr>
-</table>
 
-<!-- 第三篇论文 -->
-<table>
-<tr>
-<td>
-<p>
-<b>TSFF-Net: A novel lightweight network for video real-time detection of SF6 gas leaks</b><br>
-Jianjiang Yao, <b>Zhanhang Xiong</b>, Shugang Li, Zhaoxu Yu, Yalei Liu<br>
-Expert Systems with Applications, JCR: Q1, IF: 7.5
-</p>
-</td>
-</tr>
-</table>
+<td valign="top">
+
+<div class="paper-title">
+CrossPL: Systematic Evaluation of Large Language Models for Cross Programming Language Interoperating Code Generation
+</div>
+
+<div class="paper-authors">
+<b>Zhanhang Xiong</b>,
+Dongxia Wang,
+Yuekang Li,
+Xinyuan An,
+Wenhai Wang
+</div>
+
+<div class="paper-venue">
+ICLR 2026 (CCF-A)
+</div>
+
+<div class="paper-links">
+
+<a href="https://openreview.net/pdf?id=p4ERSIzHdL" target="_blank">
+[PDF]
+</a>
+
+<a href="https://github.com/newxzh/crosspl" target="_blank">
+[Code]
+</a>
 
 </div>
+
+</td>
+
+</tr>
+
+</table>
+
+<!-- Paper 2 -->
+
+<table class="pub-table paper-table">
+
+<tr>
+
+<td width="430">
+
+<img src="stback.png"
+width="400"
+class="paper-img">
+
+</td>
+
+<td valign="top">
+
+<div class="paper-title">
+Watch Out Your Industrial Copilots: Stealthy Backdoor Attack Against LLM-Based PLC Code Generation
+</div>
+
+<div class="paper-authors">
+Xinyuan An,
+Xiaoxia Liu,
+Dongxia Wang,
+<b>Zhanhang Xiong</b>,
+Wenhai Wang
+</div>
+
+<div class="paper-venue">
+ACL Findings 2026
+</div>
+
+<div class="paper-links">
+
+<a href="https://newxzh.github.io/" target="_blank">
+[PDF]
+</a>
+
+<a href="https://newxzh.github.io/" target="_blank">
+[Code]
+</a>
+
+</div>
+
+</td>
+
+</tr>
+
+</table>
+
+<!-- Paper 3 -->
+
+<table class="pub-table">
+
+<tr>
+
+<td>
+
+<div class="paper-title">
+A Wind Speed Forecasting Method Based on EMD-MGM with Switching QR Loss Function and Novel Subsequence Superposition
+</div>
+
+<div class="paper-authors">
+<b>Zhanhang Xiong</b>,
+Jianjiang Yao,
+Yongmin Huang,
+Zhaoxu Yu,
+Yalei Liu
+</div>
+
+<div class="paper-venue">
+Applied Energy, JCR Q1, IF: 11
+</div>
+
+</td>
+
+</tr>
+
+</table>
+
+<!-- Paper 4 -->
+
+<table class="pub-table">
+
+<tr>
+
+<td>
+
+<div class="paper-title">
+TSFF-Net: A Novel Lightweight Network for Video Real-Time Detection of SF6 Gas Leaks
+</div>
+
+<div class="paper-authors">
+Jianjiang Yao,
+<b>Zhanhang Xiong</b>,
+Shugang Li,
+Zhaoxu Yu,
+Yalei Liu
+</div>
+
+<div class="paper-venue">
+Expert Systems with Applications, JCR Q1, IF: 7.5
+</div>
+
+</td>
+
+</tr>
+
+</table>
+
+<!-- ===== Projects ===== -->
+
+<h2>Projects</h2>
+
+<ul>
+
+<li>
+<b>CrossPL</b> —
+Benchmark and evaluation framework for multilingual code interoperability generation.
+</li>
+
+<li>
+<b>LLM for PLC</b> —
+Research on LLM-based PLC code generation, verification, and industrial control agents.
+</li>
+
+<li>
+<b>Industrial AI Agents</b> —
+Agent systems for industrial software engineering and automation workflows.
+</li>
+
+</ul>
+
+<!-- ===== Footer ===== -->
+
 <footer>
+
 <hr>
+
 <p>
-Last updated: 2026
+Last updated: May 2026
 </p>
+
 </footer>
 
 </body>
-
 </html>
